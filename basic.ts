@@ -1,4 +1,4 @@
-class Customer {
+export class Customer {
   name: string;
   isActive: boolean;
 
@@ -19,3 +19,7 @@ let newMessage: string = firstCustomer.announce();
 //change the text on the page
 let webHeading = document.querySelector("h1");
 webHeading!.textContent = newMessage;
+
+class SpecialCustomer extends Customer {
+  // ...
+}
